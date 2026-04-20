@@ -1,0 +1,152 @@
+html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>View Property</title>
+
+<link rel="stylesheet" href="css/vp.css">
+
+<link <!DOCTYPE html>
+<rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="details-section">
+
+<!-- BACK BUTTON -->
+
+<a href="index.html" class="back-btn">
+<i class="fas fa-arrow-left"></i> Back
+</a>
+
+
+<div class="details-container">
+
+<!-- IMAGE SECTION -->
+
+<div class="details-left">
+
+<!-- MAIN IMAGE -->
+
+<div class="main-page">
+
+<img src="images/img.jpeg"
+id="mainImage">
+
+</div>
+
+
+<!-- GALLERY -->
+
+<div class="gallery">
+
+<img src="images/img.jpeg"
+onclick="changeimage(this)">
+
+<img src="images/img.jpeg"
+onclick="changeimage(this)">
+
+<img src="images/img.jpeg"
+onclick="changeimage(this)">
+
+<img src="images/img.jpeg"
+onclick="changeimage(this)">
+
+</div>
+
+</div>
+
+
+<!-- BOTTOM SECTION -->
+
+<div class="bottom-section">
+
+<!-- DESCRIPTION -->
+
+<div class="description-box">
+
+<h3>Description</h3>
+
+<p>
+This is a beautiful property located in the heart of the city.
+It features spacious rooms, modern amenities, and a stunning
+view of the skyline. The property is perfect for families
+and professionals looking for a comfortable and stylish
+living space.
+</p>
+
+</div>
+
+
+<!-- DETAILS SIDEBAR -->
+
+<div class="details-sidebar">
+
+<h2 class="details-title">
+Bungalow
+</h2>
+
+<p class="details-location">
+<i class="fas fa-map-marker-alt"></i>
+Yenegoa, Bayelsa
+</p>
+
+<h3 class="details-price">
+&#8358;5,000,000
+</h3>
+
+
+<div class="details-features">
+
+<div>
+width: 100m
+</div>
+
+<div>
+lenght : 202m
+</div>
+
+<div>
+<i class="fas fa-ruler-combined"></i>
+150 sqm
+</div>
+
+</div>
+
+
+<button class="contact-btn">
+
+Contact Agent
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<script>
+
+function changeimage(smallimg){
+
+var mainimg =
+document.getElementById("mainImage");
+
+mainimg.src =
+smallimg.src;
+
+}
+
+</script>
+
+</body>
+</html>

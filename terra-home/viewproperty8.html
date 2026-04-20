@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>View Property</title>
+
+<link rel="stylesheet" href="css/vp.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="details-section">
+
+<!-- BACK BUTTON -->
+
+<a href="buy.html" class="back-btn">
+<i class="fas fa-arrow-left"></i> Back
+</a>
+
+
+<div class="details-container">
+
+<!-- IMAGE SECTION -->
+
+<div class="details-left">
+
+<!-- MAIN IMAGE -->
+
+<div class="main-page">
+
+<img src="images/property7.jpeg"
+id="mainImage">
+
+</div>
+
+
+<!-- GALLERY -->
+
+<div class="gallery">
+
+<img src="images/property7.1.jpeg"
+onclick="changeimage(this)">
+
+<img src="images/property7.2.jpeg"
+onclick="changeimage(this)">
+
+<img src="images/property7.3.jpeg"
+onclick="changeimage(this)">
+
+<img src="images/property7.jpeg"
+onclick="changeimage(this)">
+
+</div>
+
+</div>
+
+
+<!-- BOTTOM SECTION -->
+
+<div class="bottom-section">
+
+<!-- DESCRIPTION -->
+
+<div class="description-box">
+
+<h3>Description</h3>
+
+<p>
+This commercial property is a prime location for businesses looking to establish themselves in the bustling city of Yenegoa. With its strategic location, ample parking space, and modern amenities, this property offers an ideal environment for various commercial ventures. Whether you're looking to open a retail store, office space, or a restaurant, this property provides the perfect canvas to bring your business vision to life. Don't miss out on this incredible opportunity to secure a prime commercial space in one of the most sought-after areas of Yenegoa.
+</p>
+
+</div>
+
+
+<!-- DETAILS SIDEBAR -->
+
+<div class="details-sidebar">
+
+<h2 class="details-title">
+Office Space
+</h2>
+
+<p class="details-location">
+<i class="fas fa-map-marker-alt"></i>
+Otueke, Bayelsa
+</p>
+
+<h3 class="details-price">
+&#8358;85,000,000
+</h3>
+
+
+<div class="details-features">
+
+<div>
+<i class="fas fa-building"></i>
+4 Offices
+</div>
+
+<div>
+<i class="fas fa-ruler-combined"></i>
+150 sqm
+</div>
+
+</div>
+
+
+<button class="contact-btn">
+
+Contact Agent
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<script>
+
+function changeimage(smallimg){
+
+var mainimg =
+document.getElementById("mainImage");
+
+mainimg.src =
+smallimg.src;
+
+}
+
+</script>
+
+</body>
+</html>

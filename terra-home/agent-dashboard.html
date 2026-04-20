@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Agent Dashboard</title>
+
+<link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+
+<div class="dashboard-container">
+
+<h1>Agent Dashboard</h1>
+
+<!-- AGENT PROFILE -->
+
+<div class="profile-section">
+
+<h2>Agent Profile</h2>
+
+<p><strong>Name:</strong> <span id="profileName"></span></p>
+
+<p><strong>Email:</strong> <span id="profileEmail"></span></p>
+
+<p><strong>Phone:</strong> <span id="profilePhone"></span></p>
+
+<p><strong>Company:</strong> <span id="profileCompany"></span></p>
+
+<p><strong>Address:</strong> <span id="profileAddress"></span></p>
+
+<button 
+class="edit-btn"
+onclick="toggleProfileForm()">
+
+Edit Profile
+
+</button>
+
+</div>
+
+
+<!-- PROFILE EDIT FORM -->
+
+<div 
+class="profile-form"
+id="profileForm"
+style="display:none;">
+
+<h2>Edit Profile</h2>
+
+<input 
+type="text"
+id="editName"
+placeholder="Full Name">
+
+<input 
+type="tel"
+id="editPhone"
+placeholder="Phone Number">
+
+<input 
+type="text"
+id="editCompany"
+placeholder="Company Name">
+
+<input 
+type="text"
+id="editAddress"
+placeholder="Office Address">
+
+<button onclick="saveProfile()">
+
+Save Profile
+
+</button>
+
+</div>
+
+<!-- ADD PROPERTY BUTTON -->
+
+<button 
+class="add-btn"
+onclick="toggleForm()">
+
+Add New Property
+
+</button>
+
+<!-- PROPERTY FORM -->
+
+<div 
+class="property-form"
+id="propertyForm"
+style="display:none;">
+
+<h2>Add Property</h2>
+
+<input 
+type="text"
+id="propertyTitle"
+placeholder="Property Title">
+
+<input 
+type="text"
+id="propertyLocation"
+placeholder="Location">
+
+<input 
+type="text"
+id="propertyPrice"
+placeholder="Price">
+
+<input 
+type="text"
+id="propertySize"
+placeholder="Size (e.g. 150 sqm)">
+
+<button onclick="addProperty()">
+
+Save Property
+
+</button>
+
+</div>
+
+<!-- PROPERTY LIST -->
+
+<h2>Your Properties</h2>
+
+<div id="propertyList">
+
+</div>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+
+</html>

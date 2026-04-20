@@ -1,0 +1,402 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* NAVBAR */
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+nav li {
+    height: 50px;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #111;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.profile-icon {
+    margin-left: auto;
+}
+/* NAV SIDEBAR */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    box-shadow: 10px 0 10px rgba(0,0,0,0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.sidebar img {
+    width: 100%;
+}
+
+
+/* AGENT PROFILE SECTION */
+
+.agent-profile {
+
+    padding: 60px 20px;
+
+    background: #f6f2ed; /* luxury beige background */
+
+}
+
+.agent-profile h1 {
+    
+    font-size: 28px;
+    
+    font-weight: 600;
+    
+}
+
+.agent-profile p {
+    
+    font-size: 14px;
+    
+    color: #8a7d72;
+    
+}
+
+/* TITLE */
+
+.agent-text {
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    color: #3a2e25;
+
+}
+
+/* GRID */
+
+.agent-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 24px;
+
+    margin-top: 40px;
+
+}
+
+/* CARD */
+
+.agent-card {
+
+    background: white;
+
+    border-radius: 16px;
+
+    padding: 20px;
+
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+
+    text-align: center;
+
+    transition: transform 0.3s ease;
+
+}
+
+.agent-card {
+    
+    border: 1px solid rgba(184, 156, 125, 0.2);
+    
+}
+
+/* Hover effect */
+
+.agent-card:hover {
+
+    transform: translateY(-6px);
+
+}
+
+/* AGENT IMAGE */
+
+.agent-card img {
+
+    width: 90px;
+
+    height: 90px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    margin-bottom: 12px;
+
+}
+
+/* NAME */
+
+.agent-card h2 {
+
+    font-size: 16px;
+
+    color: #3a2e25;
+
+    margin-bottom: 6px;
+
+}
+
+/* DESCRIPTION */
+
+.agent-card h5 {
+
+    font-size: 12px;
+
+    color: #8a7d72;
+
+    margin-bottom: 6px;
+
+    font-weight: normal;
+
+}
+
+/* BUTTON 1 (CHAT) */
+
+.agent-btn1 {
+
+    padding: 10px 18px;
+
+    border-radius: 10px;
+
+    background: #b89c7d;
+
+    color: white;
+
+    font-weight: 600;
+
+    border: none;
+
+    cursor: pointer;
+
+    margin-top: 12px;
+
+    transition: 0.3s;
+
+}
+
+/* Hover */
+
+.agent-btn1:hover {
+
+    background: #a68867;
+
+}
+
+/* BUTTON 2 (VIEW PROFILE) */
+
+.agent-btn2 {
+
+    display: inline-block;
+
+    margin-top: 10px;
+
+    font-size: 13px;
+
+    color: #b89c7d;
+
+    font-weight: 600;
+
+    text-decoration: none;
+
+}
+
+/* Arrow spacing */
+
+.agent-btn2 i {
+
+    margin-left: 5px;
+
+}
+
+
+
+/* TABLET */
+
+@media (max-width: 992px) {
+    
+    .agent-grid {
+        
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+    
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+    
+    .agent-grid {
+        
+        grid-template-columns: 1fr;
+        
+    }
+    
+}
+
+@media  (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+}
+
+    
+}
+
+@media (min-width: 801px) {
+    .hideOnLaptop {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .profile {
+        margin-left: auto;
+    }
+}
+
+
+/* FOOTER */
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 30px 16px;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li {
+    margin-bottom: 6px;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #ccc;
+}
+
+/* TABLET */
+
+@media (min-width: 768px) {
+    .footer-container {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .hero {
+        height: 500px;
+    }
+    .hero-section h1 {
+        font-size: 32px;
+    }
+}
+
+@media  (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+}
+
+    
+}
+
+@media (min-width: 801px) {
+    .hideOnLaptop {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .profile {
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>View Property</title>
+
+<link rel="stylesheet" href="css/vp.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<section class="details-section">
+
+<!-- BACK BUTTON -->
+
+<a href="buy.html" class="back-btn">
+<i class="fas fa-arrow-left"></i> Back
+</a>
+
+
+<div class="details-container">
+
+<!-- IMAGE SECTION -->
+
+<div class="details-left">
+
+<!-- MAIN IMAGE -->
+
+<div class="main-page">
+
+<img src="images/property6.jpeg"
+id="mainImage">
+
+</div>
+
+
+<!-- GALLERY -->
+
+<div class="gallery">
+
+<img src="images/property6.1.jpeg"
+onclick="changeimage(this)">
+
+<img src="images/property6.2.jpeg"
+onclick="changeimage(this)">
+
+<img src="images/property6.3.jpeg"
+onclick="changeimage(this)">
+
+<img src="images/property6.jpeg"
+onclick="changeimage(this)">
+
+</div>
+
+</div>
+
+
+<!-- BOTTOM SECTION -->
+
+<div class="bottom-section">
+
+<!-- DESCRIPTION -->
+
+<div class="description-box">
+
+<h3>Description</h3>
+
+<p>
+This is a 7 unit office space located in Yenegoa, Bayelsa. It features modern architecture and is equipped with state-of-the-art facilities. The property is ideal for businesses looking for a prestigious location with ample space for operations. Each unit is designed to provide a comfortable and productive working environment, making it an excellent choice for companies seeking to establish a strong presence in the area.
+</p>
+
+</div>
+
+
+<!-- DETAILS SIDEBAR -->
+
+<div class="details-sidebar">
+
+<h2 class="details-title">
+Office Space
+</h2>
+
+<p class="details-location">
+<i class="fas fa-map-marker-alt"></i>
+Yenegoa, Bayelsa
+</p>
+
+<h3 class="details-price">
+&#8358;80,000,000
+</h3>
+
+
+<div class="details-features">
+
+<div>
+<i class="fas fa-building"></i>
+7 Offices
+</div>
+
+<div>
+<i class="fas fa-ruler-combined"></i>
+150 sqm
+</div>
+
+</div>
+
+
+<button class="contact-btn">
+
+Contact Agent
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<script>
+
+function changeimage(smallimg){
+
+var mainimg =
+document.getElementById("mainImage");
+
+mainimg.src =
+smallimg.src;
+
+}
+
+</script>
+
+</body>
+</html>

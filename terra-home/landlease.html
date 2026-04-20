@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terma Firma Realty</title>
+    <link rel="stylesheet" href="css\landlease.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- BACK BUTTON -->
+
+<a href="property.html" class="back-btn">
+<i class="fas fa-arrow-left"></i> Back
+</a>
+
+
+    <!-- SEARCH SECTION -->
+
+<div class="search-section">
+
+<select id="locationFilter">
+
+<option value="">Location</option>
+<option value="Yenegoa">Yenegoa</option>
+<option value="Amasomma">Amasomma</option>
+<option value="Otueke">Otueke</option>
+<option value="Nembe">Nembe</option>
+<option value="Sagbama">Sagbama</option>
+<option value="Brass">Brass</option>
+
+</select>
+
+
+<select id="propertyFilter">
+
+<option value="">Property</option>
+<option value="Rent">Rent</option>
+<option value="Lease">Lease</option>
+<option value="Buy">Buy</option>
+
+</select>
+
+
+<select id="priceFilter">
+
+<option value="">Price</option>
+<option value="5000000">₦ 5M - 20M</option>
+<option value="10000000">₦ 20M - 50M</option>
+<option value="20000000">₦ 50M - 100M</option>
+
+</select>
+
+
+<button class="btns2" onclick="filterProperties()">
+
+Search
+
+</button>
+
+</div>
+
+   </section>
+
+
+   <!-- FEATURED PROPERTY -->
+
+   <section class="featured-section">
+
+    <h2 class="featured-title">
+        Land for Lease
+    </h2>
+
+    <div class="grid">
+
+        <div class="card" 
+        data-location="Brass"
+        data-property="Lease"
+        data-price="&#8358;70,000,000"
+        >
+
+            <div class="card-image">
+
+            <img src="images/property2.2.jpeg" alt="">
+
+            <span class="price-tag">
+                Lease
+            </span>
+
+            </div>
+
+            <div class="card-content">
+
+            <h4 class="property-title">
+                5 Acres of Land
+            </h4>
+
+            <div class="propert-details">
+                <span>
+                    width: 100m
+                </span>
+                <span>
+                    length: 202m
+                </span>
+            </div>
+
+           <a href="viewproperty6.html"><button class="reserve-btn">
+                view
+            </button></a>
+        </div>
+        </div>
+        
+
+       <div class="card" 
+        data-location="Sagbama"
+        data-property="Lease"
+        data-price="&#8358;15,000,000"
+        >
+
+            <div class="card-image">
+
+            <img src="images/property2.jpeg" alt="">
+
+            <span class="price-tag">
+                 &#8358;15,000,000k
+            </span>
+
+            </div>
+
+            <div class="card-content">
+
+            <h4 class="property-title">
+                5 Acres of Land
+            </h4>
+
+            <div class="property-details">
+                <span>
+                    width: 100m
+                </span>
+                <span>
+                    length: 202m
+                </span>
+            </div>
+
+            <a href="viewproperty2.html"><button class="reserve-btn">
+                view
+            </button></a>
+
+        </div>
+        </div>
+        
+        <div class="card" 
+        data-location="Nembe"
+        data-property="lease"
+        data-price="&#8358;50,000,000"
+        >
+
+            <div class="card-image">
+
+            <img src="images/property2.1.jpeg" alt="">
+
+            <span class="price-tag">
+                 &#8358;50,000,000k/year
+            </span>
+
+            </div>
+
+            <div class="card-content">
+
+            <h4 class="property-title">
+                7 Acres of Land
+            </h4>
+
+            <div class="property-details">
+                <span>
+                    width: 100m
+                </span>
+                <span>
+                    lenght: 202m
+                </span>
+            </div>
+
+           <a href="viewproperty15.html"><button class="reserve-btn">
+                view
+            </button></a>
+        </div>
+        </div>
+
+    
+
+       <div class="card" 
+        data-location="Yenegoa"
+        data-property="Lease"
+        data-price="&#8358;65,000,000"
+        >
+
+            <div class="card-image">
+
+            <img src="images/property2.2.jpeg" alt="">
+
+            <span class="price-tag">
+                 &#8358;65,000,000
+            </span>
+
+            </div>
+
+            <div class="card-content">
+
+            <h4 class="property-title">
+                5 Acres of Land
+            </h4>
+
+            <div class="property-details">
+            
+                <span>
+                    width: 100m
+                </span>
+                <span>
+                    lenght: 202m
+                </span>
+            </div>
+
+            <a href="viewproperty16.html"><button class="reserve-btn">
+                view
+            </button></a>
+
+        </div>
+        </div>
+
+        <div class="card" 
+        data-location="Otueke"
+        data-property="Lease"
+        data-price="&#8358;45,000,000"
+        >
+
+            <div class="card-image">
+
+            <img src="images/property2.2.jpeg" alt="">
+
+            <span class="price-tag">
+                 &#8358;45,000,000
+            </span>
+
+            </div>
+
+            <div class="card-content">
+
+            <h4 class="property-title">
+                2 Acres of Land
+            </h4>
+
+            <div class="property-details">
+            
+                <span>
+                    width: 100m
+                </span>
+                <span>
+                    lenght: 202m
+                </span>
+            </div>
+
+            <a href="viewproperty17.html"><button class="reserve-btn">
+                view
+            </button></a>
+
+        </div>
+        </div>
+
+        <div class="card" 
+        data-location="Nembe"
+        data-property="Lease"
+        data-price="&#8358;5,000,000"
+        >
+
+            <div class="card-image">
+
+            <img src="images/property2.jpeg" alt="">
+
+            <span class="price-tag">
+                 &#8358;5,000,000
+            </span>
+
+            </div>
+
+            <div class="card-content">
+
+            <h4 class="property-detail">
+                1 Acre of Land
+            </h4>
+
+            <div class="property-details">
+    
+                <span>
+                    width: 100m
+                </span>
+                <span>
+                    lenght: 202m
+                </span>
+            </div>
+
+            <a href="viewproperty18.html"><button class="reserve-btn">
+                view
+            </button></a>
+            
+        </div>
+        </div>
+
+    </div>
+
+   </section>
+
+
+
+   <!-- FOOTER -->
+
+   <footer class="footer">
+      
+    <div class="footer-container">
+
+        <div>
+
+            <h3>
+                Terra Firma Realty
+            </h3>
+
+            <p>
+                Premium Real Estate Platform Connecting Buyers to Luxury Homes
+            </p>
+
+        </div>
+
+        <div>
+
+        <h4>Quick Links</h4>
+
+        <ul>
+
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Properties</li></a>
+            <a href="#"><li>Location</li></a>
+            <a href="#"><li>Contact</li></a>
+        </ul>
+    </div>
+
+    <div>
+
+        <h4>Contact</h4>
+
+        <p>Email: info@terrafirmarealty.com</p>
+        <p> Phone: +234 800 000 0000 </p>
+
+    </div>
+
+    </div>
+
+    <p  class="copyright">
+        2026 Terra Firma House
+    </p>
+
+   </footer>
+
+   <script>
+
+    function showSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "flex"
+    }
+    
+    function hideSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.style.display = "none"
+    }
+
+// FILTER SEARCHES
+
+function filterProperties() {
+
+let location =
+document.getElementById("locationFilter").value;
+
+let property =
+document.getElementById("propertyFilter").value;
+
+let price =
+document.getElementById("priceFilter").value;
+
+
+let cards =
+document.querySelectorAll(".card");
+
+
+cards.forEach(function(card) {
+
+let cardLocation =
+card.getAttribute("data-location");
+
+let cardProperty =
+card.getAttribute("data-property");
+
+let cardPrice =
+card.getAttribute("data-price");
+
+
+let show = true;
+
+
+/* LOCATION FILTER */
+
+if(location !== "" &&
+location !== cardLocation){
+
+show = false;
+
+}
+
+
+/* PROPERTY FILTER */
+
+if(property !== "" &&
+property !== cardProperty){
+
+show = false;
+
+}
+
+
+/* PRICE FILTER */
+
+if(price !== "" &&
+parseInt(cardPrice) >
+parseInt(price)){
+
+show = false;
+
+}
+
+
+/* SHOW OR HIDE */
+
+if(show){
+
+card.style.display = "block";
+
+}
+else{
+
+card.style.display = "none";
+
+}
+
+});
+
+}
+
+   </script>
+</body>
+</html>
